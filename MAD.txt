@@ -1,0 +1,45 @@
+MAD:
+Mobile computing:
+a work process moved from a fixed position to a more dynamic position.
+
+Main Components of Mobile Computing Systems:
+* mobile software
+* mobile hardware
+* communication
+
+wireless communication:
+PAN
+bluetooth
+WLAN
+WIFI
+Wireless access point
+hotspot
+WWAN(1G, 2G, ...)
+
+Mobile OS:
+software that allows phone, tablet etc to run applications and programs.
+Traditional trends:
+Symbian OS
+Palm OS
+Psion OS
+Current trends:
+iOS
+Android
+Windows phone
+
+Types of mobile app development
+Native
+Cross Platform
+Hybrid
+
+Introduction to dart language:
+Dart:
+Programming language to develop mobile applications
+develop by google
+syntax similar to C, java etc
+.dart extension
+
+Application of dart
+Flutter application
+cross platform application 
+web applications
