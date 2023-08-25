@@ -1,0 +1,204 @@
+
+//optional positional parameters
+void greet([int age = 0]){
+  
+  print("i am $age years old!");
+}
+
+//optional named paramters
+void greet2({String name = " "}){
+  print("My name is $name");
+}
+
+//arrow functions
+int add(int x, int y) => x + y;
+
+//classes and objects
+class Person {
+  int age = 0;
+  String name = " ";
+  
+  void hello (){
+    print("My name is $name and i am $age years old");
+  }
+}
+
+//Constructor
+class Person2 {
+  int age = 0;
+  String name = " ";
+  
+  Person2(this.age, this.name);
+  
+  void sayHello (){
+    print("My name is $name and i am $age years old");
+  }
+}
+
+//inheritance
+//base class
+class Identity{
+  void function(){
+    print("hi!!");
+  }
+}
+
+class Derived extends Identity{
+  @override
+  void function(){
+    print("hello guysss");
+  }
+}
+void main() {
+  
+  //basic syntax
+  print("Hello Daniyal");
+  
+  //declaring variables
+  var num1 = 107;
+  String name = "Daniyal";
+  print(num1);
+  print(name);
+  
+  //built-in data types
+  
+  //number
+  int num2 = 107;
+  double num3 = 3.5;
+  print(num2);
+  print(num3);
+  
+  //String
+  String name2 = "Daniyal Awan";
+  print("My name is $name2");
+  
+  //bool
+  bool test;
+  test = 107>68;
+  print(test);
+  
+  //list
+  var num_list = [7,8,9];
+  num_list.add(10);
+  num_list.insert(0,6);
+  print(num_list);
+  
+  //map
+  var login = new Map();
+  login["Username"] = "Admin";
+  login["Password"] = "veryhardpassword";
+  print(login);
+  
+  var login2 = {'Usrname':'John Wick','Password':'veryhardpassword'}; 
+  login2['Email'] = 'johnwickcr9'; 
+  print(login2); 
+  
+  //String Interpolation
+  var name3 = "Daniyal";
+  var city = "Hyderabad";
+  print("My name is $name3 and i live in $city");
+  
+  //Operators
+  //Conditional Operators
+  var num4 = 107;
+  var check = num4 > 68 ? "value greater than 107" : "value<= 107";
+  print(check);
+  
+  //Control flow statements
+  // if else
+  var num5 = 107;
+  if(num5>68){
+    print("Given number is greater than 68");
+  }
+  else{
+    print("number is smaller than 68");
+  }
+  
+  //if else if 
+  var num6 = 107;
+  if(num6>119){
+    print("Given number is greater than 119");
+  }
+  else if(num6 == 119){
+    print("Both thr numbers are equal");
+                     }
+  else{
+    print("Number is smaller than 119");
+  }
+  
+  var name4 = "Daniyal Awan";
+  switch(name4){
+    case "Daniyal Awan":
+      print("Welcome Daniyal!!");
+      break;
+    case "Saif":
+      print("wrong user");
+      break;
+    default:
+      print("Welcome new user");
+      break;
+  }
+  
+  //loops
+  //for loop
+  for(int i =1; i<= 5; i++){
+    print(i);
+  }
+  
+  //while loop
+  int j = 6;
+  while(j<=10){
+    print(j);
+    j++;
+  }
+  
+  //do while loop
+  int k =11;
+  do{
+    print(k);
+    k++;
+  }while(k<=15);
+  
+  //continue
+  for(int i =1; i < 5; i++){
+    if(i==2){
+      continue;
+    }
+    print(i);
+  }
+  
+  //Functions
+  //Optional positional parameters
+  greet(20);
+  
+  //Optional named parameters
+  greet2(name: "Daniyal");
+  
+  //Anonymous Function
+  var square = (int num7){
+    return num7 * num7;
+  };
+  print(square(5));
+  
+  //arrow function calling
+  print(add(5,7));
+  
+  //classes and objects
+  var person1 = Person();
+  person1.name = "Daniyal";
+  person1.age = 20;
+  person1.hello();
+  
+  var person2 = Person();
+  person2.name = "Saifullah";
+  person2.age = 22;
+  person2.hello();
+  
+  //constructors
+  var person3 = Person2(20, "Daniyal");
+  person3.sayHello();
+  
+  //inheritance
+  var var1 = Derived();
+  var1.function();
+}
